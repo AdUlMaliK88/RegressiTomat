@@ -4,7 +4,7 @@ import streamlit as st
 
 
 st.sidebar.title("Informasi")
-st.sidebar.success("Dibuat dengan Streamlit oleh Adi Setiawan")
+st.sidebar.success("Dibuat dengan Streamlit oleh Abdul Malik")
 
 
 st.title("Regresi Penjualan Tomat")
@@ -40,4 +40,5 @@ if st.button("Prediksi"):
     
     prediksi = model_forest.predict(data_baru)[0]
     st.success(f"Model memprediksi total penjualan = {prediksi:.0f}")
+
     st.balloons()
